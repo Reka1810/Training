@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function strStarts(str,starts){
+        let isMatched = false;
+        for (let idx=0;idx<starts.length;idx++){
+            if(str[idx]==starts[idx]){
+                isMatched = true;
+            }else{
+                isMatched = false;
+                break;
+            }
+        }
+        return isMatched;
+    }
+    let str="Hello World";
+    let starts="Helrlo";
+    let startsWith=strStarts(str,starts);
+    console.log(startsWith);
+
+   </script> 
+</body>
+</html>

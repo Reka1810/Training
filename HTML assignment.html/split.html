@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split</title>
+</head>
+<body>
+    <script>
+        function strSplit(str,split){
+           // let result=[];
+            let splitResult="";
+            for (let idx=0;idx<str.length;idx++){
+                if(str[idx]==split){
+                  splitResult +=",";
+                }else{
+                    splitResult +=str[idx];
+                }
+            }
+            console.log(splitResult);
+
+        }
+        strSplit("Hello World Hii"," ");
+    </script>
+</body>
+</html>
