@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function strPadStart(str,size,ele){
+            let result="";
+            let strlen=str.length;
+            let fill=size-strlen;
+            if(size<strlen){
+                strlen=size;
+            }
+            for(let idx=0;idx<strlen;idx++){
+                result =ele+result+str[idx];
+            }
+            console.log(result);
+
+        }
+        strPadStart("welcome to string",1,"^")
+    </script>
+</body>
+</html>

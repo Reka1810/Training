@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function strEnds(str,ends){
+        let isMatched = false;
+        for (let idx=str.length-1;idx>=0;idx--){
+            if(str[idx]==ends[idx]){
+                isMatched = true;
+            }else{
+                isMatched = false;
+                break;
+            }
+        }
+        return isMatched;
+    }
+    let str="Hello World";
+    let ends="World";
+    let endsWith=strEnds(str,ends);
+    console.log(endsWith);
+
+       </script> 
+</body>
+</html>

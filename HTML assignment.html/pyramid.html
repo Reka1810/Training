@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    range1:<input type="text" id="range1" name="range1">
+    <button type="button" onclick="pyramid()">print</button>
+    <div id="result"></div>
+    <script>
+        function pyramid(){
+            let result="";
+            let num=document.getElementById('range1').value;
+            for (let row=1;row<=(Math.ceil(num/2));row++){
+                let stop=Math.floor(num/2)+row;
+                for (let col=1;col<=stop;col++){
+                    if(col<=num-stop){
+                        result +="&nbsp;&nbsp;";
+                    }else{
+                        result +="*";
+                    }
+                }
+                result +="<br>"
+            }
+           document.getElementById('result').innerHTML=result;
+        }
+    </script>
+</body>
+</html>
+
